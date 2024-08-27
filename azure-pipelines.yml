@@ -14,12 +14,12 @@ variables:
 lockBehavior: sequential
 
 stages:
-    - stage: iac_validation
+    - stage: iac_destroy
       condition: always()
-      displayName: IaC Validate
+      displayName: IaC Destroy
       jobs:
-        - job: iac_validation
-          displayName:  IaC Validation
+        - job: iac_destroy
+          displayName:  IaC Destroy
           steps:
           - bash: env
             displayName: Display Environment Variables
