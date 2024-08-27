@@ -5,7 +5,7 @@ with open('urltoattack.txt') as f:
     url = f.readline().rstrip()
     f.close()
 
-url = "http://{}/helloworld/greeting".format(url)
+url = "http://a78932b272c0444f39f3c93f9b8f8b16-180454248.us-east-1.elb.amazonaws.com/helloworld/greeting".format(url)
 
 # Set to bypass errors if the target site has SSL issues
 requests.packages.urllib3.disable_warnings()
